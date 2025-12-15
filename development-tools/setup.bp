@@ -1,0 +1,16 @@
+# Asdf Installation
+
+include asdf/fd/setup.bp
+include asdf/fzf/setup.bp
+include asdf/golang/setup.bp
+include asdf/neovim/setup.bp
+include asdf/nodejs/setup.bp
+include asdf/python/setup.bp
+include asdf/ruby/setup.bp
+include asdf/rust/setup.bp
+include asdf/uv/setup.bp
+include asdf/yarn/setup.bp
+
+# Command line tools
+
+homebrew gum
