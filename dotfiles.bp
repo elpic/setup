@@ -1,0 +1,9 @@
+# Clones and symlinks personal dotfiles from GitHub, setting up shell,
+# editor, and tool configuration across Mac and Linux
+dotfiles git@github.com:elpic/dotfiles.git skip: [scripts] on: [mac, linux]
+
+mkdir ~/.local/bin on: [linux, mac]
+
+# Symlinks nvim (managed by asdf) as `vim` in ~/.local/bin so that
+# tools and habits expecting `vim` use the correct neovim installation
+run rm -rf ~/.local/bin/vim && ln -s $(asdf which nvim) ~/.local/bin/vim on: [linux, mac]
