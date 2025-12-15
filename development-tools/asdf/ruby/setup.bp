@@ -1,0 +1,11 @@
+# Ruby dependencies
+install autoconf on: [linux]
+install libssl-dev on: [linux]
+install libyaml-dev on: [linux]
+install zlib1g-dev on: [linux]
+install libffi-dev on: [linux]
+install libgmp-dev on: [linux]
+install rustc on: [linux]
+
+// asdf ruby@3.1.0 after: [git, autoconf, libssl-dev, libyaml-dev, zlib1g-dev, libffi-dev, libgmp-dev, rustc] on: [linux, mac]
+// asdf ruby@3.2.2 after: [git, autoconf, libssl-dev, libyaml-dev, zlib1g-dev, libffi-dev, libgmp-dev, rustc] on: [linux, mac]

@@ -1,0 +1,8 @@
+mkdir ~/.ssh permissions: 700 on: [linux, mac]
+
+decrypt data/ssh/id_rsa.enc to: ~/.ssh/id_rsa group: vim password-id: main on: [linux, mac]
+decrypt data/ssh/id_rsa.pub.enc to: ~/.ssh/id_rsa.pub group: vim password-id: main on: [linux, mac]
+decrypt data/ssh/id_ed25519.enc to: ~/.ssh/id_ed25519 group: vim password-id: main on: [linux, mac]
+decrypt data/ssh/id_ed25519.pub.enc to: ~/.ssh/id_ed25519.pub group: vim id: vim password-id: main on: [linux, mac]
+
+known_hosts github.com key-type: ed25519

@@ -1,0 +1,5 @@
+asdf nodejs@16.16.0 after: git on: [linux, mac]
+asdf nodejs@18.12.1 after: git on: [linux, mac]
+asdf nodejs@21.4.0 after: git on: [linux, mac]
+asdf nodejs@22.13.0 after: git on: [linux, mac]
+asdf nodejs@23.7.0 after: git on: [linux, mac]
