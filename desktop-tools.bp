@@ -1,0 +1,77 @@
+####################
+# Slack            #
+####################
+
+# slack: Team messaging and collaboration platform
+install slack package-manager: snap on: [linux]
+homebrew cask: slack on: [mac]
+
+####################
+# Brave Browser    #
+####################
+
+# brave-browser: Privacy-focused web browser with built-in
+# ad blocking and tracking protection
+install brave package-manager: snap on: [linux]
+homebrew cask: brave-browser on: [mac]
+
+####################
+# Bitwarden        #
+####################
+
+# bitwarden: Open-source password manager for securely
+# storing and managing credentials
+install bitwarden package-manager: snap on: [linux]
+homebrew cask: bitwarden on: [mac]
+
+####################
+# Rectangle        #
+####################
+
+# rectangle: Window management app for Mac that allows snapping
+# and resizing windows using keyboard shortcuts
+homebrew cask: rectangle on: [mac]
+
+####################
+# Postman          #
+####################
+
+# postman: API development and testing platform for building,
+# testing, and documenting APIs
+install postman package-manager: snap on: [linux]
+homebrew cask: postman on: [mac]
+
+
+####################
+# TablePlus        #
+####################
+
+# tableplus: Modern database GUI client supporting multiple
+# databases with a clean, native interface
+# Note: not available via snap on Linux, uses official Debian repo
+homebrew cask: tableplus on: [mac]
+
+####################
+# Notion           #
+####################
+
+# notion: All-in-one workspace for notes, docs, databases,
+# and project management
+install notion-snap-reborn package-manager: snap on: [linux]
+homebrew cask: notion on: [mac]
+
+####################
+# Skitch           #
+####################
+
+# skitch: Screenshot and annotation tool for quickly capturing,
+# marking up, and sharing images on Mac
+homebrew cask: skitch on: [mac]
+
+####################
+# Rewind           #
+####################
+
+# rewind: Records and makes searchable everything on your Mac,
+# including meetings, audio, and screen activity
+homebrew cask: rewind on: [mac]

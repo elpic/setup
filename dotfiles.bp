@@ -1,0 +1,5 @@
+# Clones and symlinks personal dotfiles from GitHub, setting up shell,
+# editor, and tool configuration across Mac and Linux
+dotfiles git@github.com:elpic/dotfiles.git skip: [scripts] on: [mac, linux]
+
+mkdir ~/.local/bin on: [linux, mac]

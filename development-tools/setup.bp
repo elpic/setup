@@ -1,0 +1,109 @@
+# Mise Installation
+
+# sqlite: A lightweight, serverless SQL database engine
+mise sqlite@3.51.2
+
+# bun: A fast all-in-one JavaScript runtime, bundler, and package manager
+mise bun@1.3.10
+
+# neovim: A highly extensible Vim-based text editor with modern features and Lua scripting
+mise neovim@0.11.1
+
+# tmux: A terminal multiplexer for managing multiple terminal sessions in a single window
+mise tmux@3.6a
+
+# Command line tools
+
+homebrew gum
+
+# Tmux Tools
+
+clone https://github.com/tmux-plugins/tpm.git to: ~/.tmux/plugins/tpm on: [linux, mac] 
+
+# Common tools
+
+# bat: A cat replacement with syntax highlighting, line numbers,
+# git integration, and automatic paging
+homebrew bat
+
+# duf: A modern df replacement with a cleaner, colorized output
+# for disk usage and free space
+homebrew duf
+
+# entr: Runs arbitrary commands when files change, useful for
+# triggering rebuilds or tests on file save
+homebrew entr
+
+# fdupes: Finds and optionally removes duplicate files in a
+# directory tree by comparing file sizes and checksums
+homebrew fdupes
+
+# hyperfine: A command-line benchmarking tool for comparing the
+# performance of multiple commands with statistical analysis
+homebrew hyperfine
+
+# procs: A modern ps replacement with colorized output, search,
+# and tree view for process listing
+homebrew procs
+
+# tre: A modern tree replacement with colorized output and
+# integration with your editor for quick file navigation
+homebrew tre
+
+# tldr: Simplified man pages with practical examples for common
+# command usage, community-maintained
+homebrew tldr
+
+# htop: An interactive process viewer with a colorized, scrollable
+# interface and easy process management
+homebrew htop
+
+# ncdu: An ncurses-based disk usage analyzer for interactively
+# browsing and identifying large files and directories
+homebrew ncdu
+
+# tree: Displays directory contents in a recursive tree structure,
+# useful for visualizing project layouts
+homebrew tree
+
+# diff-so-fancy: A diff formatter that makes git diffs more readable
+# with word-level highlighting and cleaner output
+homebrew diff-so-fancy
+
+# fzf: A general-purpose command-line fuzzy finder used for
+# interactive filtering of files, history, and other lists
+mise fzf@0.53.0
+
+# ripgrep: A fast recursive search tool that respects .gitignore,
+# used by editors like neovim for file content searching
+mise ripgrep@15.0.0
+
+# jq: A lightweight command-line JSON processor for parsing,
+# filtering, and transforming JSON data
+mise jq@1.8.1
+
+# github-cli: Official GitHub CLI for managing repos, PRs, issues,
+# and workflows directly from the terminal
+mise github-cli@2.87.2
+
+# opencode: An AI coding agent built for the terminal, with support
+# for multiple AI providers and deep editor integration
+homebrew opencode
+
+# readline: A library for line-editing and history used by many
+# CLI tools and language REPLs (e.g. Ruby, Python, PostgreSQL)
+homebrew readline on: [mac]
+
+# pinentry-mac: A macOS-native PIN entry dialog for GPG, allowing
+# secure passphrase prompts via the system keychain
+homebrew pinentry-mac on: [mac]
+
+# Fonts
+
+include nerd-fonts.bp
+
+# Containers
+
+# orbstack: A fast, lightweight Docker Desktop alternative for Mac
+# with native performance for running containers and Linux VMs
+homebrew orbstack on: [mac]

@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//private/tmp/blueprint/**)",
+      "Read(//tmp/blueprint/internal/parser/**)",
+      "Read(//tmp/blueprint/internal/handlers/**)",
+      "Read(//tmp/blueprint/**)",
+      "WebSearch",
+      "WebFetch(domain:mise.jdx.dev)",
+      "Bash(cd /Users/elpic/development/workspace/personal/tree-sitter-blueprint && git tag v0.1.0 && git push origin v0.1.0 2>&1)",
+      "Bash(gh release:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

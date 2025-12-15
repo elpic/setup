@@ -1,0 +1,31 @@
+
+# Configure SSH keys and authentication settings for secure Git and remote access
+include ssh.bp
+
+# Configure terminal and shell settings for an optimized development environment
+include terminal.bp
+
+# Developer Tools
+
+include development-tools/setup.bp
+
+# Entertainment
+
+include entertainment/setup.bp
+
+# Personal Tools
+
+include personal-tools.bp
+
+# Desktop Tools
+
+include desktop-tools.bp
+
+# Dotfiles
+
+include dotfiles.bp
+
+# Configures sudoers to allow passwordless sudo for the current user on Linux
+sudoers on: [linux]
+
+schedule daily source: https://github.com/elpic/setup.git on: [linux]
