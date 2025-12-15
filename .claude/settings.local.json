@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//private/tmp/blueprint/**)",
+      "Read(//tmp/blueprint/internal/parser/**)",
+      "Read(//tmp/blueprint/internal/handlers/**)",
+      "Read(//tmp/blueprint/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
