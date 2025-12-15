@@ -1,0 +1,42 @@
+####################
+# WhatsApp         #
+####################
+
+# whatsapp-electron: An unofficial WhatsApp desktop client built with
+# Electron, installed via snap on Linux systems
+install whatsapp-electron package-manager: snap on: [linux]
+
+homebrew cask: whatsapp on: [mac] 
+
+####################
+# Telegram         #
+####################
+
+# telegram-desktop: The official Telegram messaging app for desktop,
+# installed via snap on Linux systems
+install telegram-desktop package-manager: snap on: [linux]
+
+homebrew cask: telegram-desktop on: [mac] 
+
+####################
+# Calibre          #
+####################
+
+# Dependencies
+
+install libxcb-xinerama0 on: [linux]
+install libxcb-icccm4 on: [linux]
+install libxcb-image0 on: [linux]
+install libxcb-keysyms1 on: [linux]
+install libxcb-render-util0 on: [linux]
+install libxcb-cursor0 on: [linux]
+
+# calibre: A powerful e-book manager and converter, installed via the
+# official shell installer on Linux; skipped if already installed,
+# and uninstalled via calibre-uninstall when removed
+#
+# To uninstall run calibre-uninstall this needs to be manually because
+# it needs to confirm the uninstall
+run-sh https://download.calibre-ebook.com/linux-installer.sh unless: calibre --version sudo: true after: [libxcb-xinerama0, libxcb-icccm4, libxcb-image0, libxcb-keysyms1, libxcb-render-util0, libxcb-cursor0] on: [linux] 
+
+homebrew cask: calibre on: [mac]

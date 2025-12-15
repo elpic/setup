@@ -1,0 +1,27 @@
+# Terminal emulator
+
+gpg-key https://apt.fury.io/wez/gpg.key keyring: wezterm-fury deb-url: https://apt.fury.io/wez/ id: wezterm-gpg on: [linux]
+
+install wezterm after: wezterm-gpg on: [linux, mac]
+
+# Shell
+
+install zsh on: [linux, mac]
+
+# Developer Tools 
+
+install git on: [linux, mac]
+
+# Aditional tools for the terminal
+
+# oh-my-zsh zsh improvements
+
+clone https://github.com/ohmyzsh/ohmyzsh.git to: ~/.oh-my-zsh/ id: oh-my-zsh on: [linux, mac]
+
+download https://git.io/antigen to: ~/.oh-my-zsh/antigen.zsh overwrite: false after: oh-my-zsh on: [linux, mac]
+
+# Install sesh
+
+install zoxide on: [linux, mac] 
+
+homebrew sesh after: zoxide on: [linux, mac]

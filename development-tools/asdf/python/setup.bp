@@ -1,0 +1,17 @@
+# Python dependencies
+install zlib1g-dev on: [linux]
+install libbz2-dev on: [linux]
+install libreadline-dev on: [linux]
+install libsqlite3-dev on: [linux]
+install wget on: [linux]
+install curl on: [linux]
+install llvm on: [linux]
+install libncursesw5-dev on: [linux]
+install xz-utils on: [linux]
+install tk-dev on: [linux]
+install libxml2-dev on: [linux]
+install libxmlsec1-dev on: [linux]
+install libffi-dev on: [linux]
+install liblzma-dev on: [linux]
+
+// asdf python@3.14.0 after: [git, zlib1g-dev, libbz2-dev, libreadline-dev, libsqlite3-dev, wget, curl, llvm, libncursesw5-dev, xz-utils, tk-dev, libxml2-dev, libxmlsec1-dev, libffi-dev, liblzma-dev] on: [linux, mac]
