@@ -40,3 +40,11 @@ install libxcb-cursor0 on: [linux]
 run-sh https://download.calibre-ebook.com/linux-installer.sh unless: calibre --version sudo: true after: [libxcb-xinerama0, libxcb-icccm4, libxcb-image0, libxcb-keysyms1, libxcb-render-util0, libxcb-cursor0] on: [linux] 
 
 homebrew cask: calibre on: [mac]
+
+####################
+# Hazelnut         #
+####################
+
+# hazelnut: A terminal-based automated file organizer that monitors
+# directories and applies customizable rules to organize files
+homebrew ricardodantas/tap/hazelnut on: [mac]
