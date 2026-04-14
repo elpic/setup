@@ -90,6 +90,11 @@ mise github-cli@2.87.2
 # for multiple AI providers and deep editor integration
 homebrew opencode
 
+# rtk: A high-performance CLI proxy that reduces LLM token consumption
+# by filtering, grouping, and compressing command outputs before they
+# reach AI assistant context windows
+homebrew rtk
+
 # readline: A library for line-editing and history used by many
 # CLI tools and language REPLs (e.g. Ruby, Python, PostgreSQL)
 homebrew readline on: [mac]
