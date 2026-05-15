@@ -5,6 +5,10 @@ include ssh.bp
 # Configure terminal and shell settings for an optimized development environment
 include terminal.bp
 
+# AI Tools
+
+include ai/setup.bp
+
 # Developer Tools
 
 include development-tools/setup.bp
