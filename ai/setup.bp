@@ -1,0 +1,2 @@
+# AI coding assistant with terminal-based interface and multi-model support
+brew install anomalyco/tap/opencode
