@@ -1,3 +1,9 @@
-install fonts-firacode on: [linux] 
+# Nerd Fonts via Homebrew cask (macOS only)
+homebrew cask font-fira-code-nerd-font on: [mac]
+
+# Linux: Download and install Fira Code Nerd Font
+run "mkdir -p ~/.local/share/fonts/FiraCodeNerdFont" on: [linux]
+download "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/FiraCode.zip" to: "/tmp/FiraCode.zip" on: [linux]
+run "unzip -o /tmp/FiraCode.zip -d ~/.local/share/fonts/FiraCodeNerdFont && fc-cache -f ~/.local/share/fonts" on: [linux]
 
 # TODO: install on mac
