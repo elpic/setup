@@ -22,6 +22,4 @@ download https://git.io/antigen to: ~/.oh-my-zsh/antigen.zsh overwrite: false af
 
 # Install sesh
 
-install zoxide on: [linux, mac] 
-
-homebrew sesh after: zoxide on: [linux, mac]
+homebrew sesh on: [linux, mac]

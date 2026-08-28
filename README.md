@@ -13,7 +13,7 @@ blueprint apply https://github.com/elpic/setup.git
 ### Terminal & Shell
 - **WezTerm** — GPU-accelerated terminal emulator
 - **Zsh** + **Oh My Zsh** + **Antigen** — shell with plugin management
-- **sesh** + **zoxide** — session management and smart directory jumping
+- **sesh** — session management (its brew formula depends on zoxide)
 - **tmux** (via mise) + **tpm** — terminal multiplexer with plugin manager
 
 ### AI Tools
