@@ -25,3 +25,12 @@ download https://git.io/antigen to: ~/.oh-my-zsh/antigen.zsh overwrite: false af
 install zoxide on: [linux, mac] 
 
 homebrew sesh after: zoxide on: [linux, mac]
+
+# Nushell: modern shell with structured data, tried alongside zsh
+homebrew nushell
+
+# Carapace: completion bridge so nushell gets zsh/bash/fish completions
+homebrew carapace
+
+# Starship: cross-shell prompt used by nushell (zsh keeps p10k)
+homebrew starship
