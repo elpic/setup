@@ -35,5 +35,10 @@ homebrew carapace
 # Starship: cross-shell prompt used by nushell (zsh keeps p10k)
 homebrew starship
 
+# Register nushell's binary path in /etc/shells so chsh accepts it.
+# `which nu` resolves cross-platform (/opt/homebrew/bin/nu on macOS,
+# /home/linuxbrew/.linuxbrew/bin/nu on Linux). Idempotent via `unless:`.
+run 'grep -qxF "$(which nu)" /etc/shells || echo "$(which nu)" | tee -a /etc/shells > /dev/null' unless: 'grep -qxF "$(which nu)" /etc/shells' sudo: true id: register-nu-shells after: homebrew-nushell on: [mac, linux]
+
 # Set nushell as the default login shell on both platforms
-shell nu after: homebrew-nushell on: [mac, linux]
+shell nu after: register-nu-shells on: [mac, linux]
