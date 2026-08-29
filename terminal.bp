@@ -27,7 +27,7 @@ install zoxide on: [linux, mac]
 homebrew sesh after: zoxide on: [linux, mac]
 
 # Nushell: modern shell with structured data, tried alongside zsh
-homebrew nushell id: homebrew-nushell
+homebrew nushell id: nushell
 
 # Carapace: completion bridge so nushell gets zsh/bash/fish completions
 homebrew carapace
@@ -36,4 +36,4 @@ homebrew carapace
 homebrew starship
 
 # Set nushell as the default login shell on both platforms
-shell nu after: homebrew-nushell on: [mac, linux]
+shell nu after: nushell on: [mac, linux]
