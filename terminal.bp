@@ -20,6 +20,3 @@ clone https://github.com/ohmyzsh/ohmyzsh.git to: ~/.oh-my-zsh/ id: oh-my-zsh on:
 
 download https://git.io/antigen to: ~/.oh-my-zsh/antigen.zsh overwrite: false after: oh-my-zsh on: [linux, mac]
 
-# Install sesh
-
-homebrew sesh on: [linux, mac]
